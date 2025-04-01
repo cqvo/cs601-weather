@@ -1,38 +1,24 @@
-# sv
-
-Everything you need to build a Svelte project, powered by [`sv`](https://github.com/sveltejs/cli).
-
-## Creating a project
-
-If you're seeing this, you've probably already done this step. Congrats!
-
+# Overview
+Built using Svelte 5 and SvelteKit using Tailwind CSS and the Skeleton UI library.
+## To run
 ```bash
-# create a new project in the current directory
-npx sv create
+# Install dependencies
+yarn install
 
-# create a new project in my-app
-npx sv create my-app
+# Start local server
+yarn dev
 ```
 
-## Developing
+# Assignment text
+## The Weather App
+In this mobile web application, we are going build our own weather app. We are going to use the free tier from openweathermap.org. The free API's can be found here: https://openweathermap.org/price#weather, near the bottom of the page.
 
-Once you've created a project and installed dependencies with `npm install` (or `pnpm install` or `yarn`), start a development server:
+Using the 5 day weather forecast (https://openweathermap.org/forecast5 to show each day's weather.
 
-```bash
-npm run dev
+There is an example attached to show you a representation of the solution could be.
 
-# or start the server and open the app in a new browser tab
-npm run dev -- --open
-```
+The top section should have today's weather (temperature, high/low, an image of what the weather representation is for today) The bottom section has the 5 day forecast.
 
-## Building
-
-To create a production version of your app:
-
-```bash
-npm run build
-```
-
-You can preview the production build with `npm run preview`.
-
-> To deploy your app, you may need to install an [adapter](https://svelte.dev/docs/kit/adapters) for your target environment.
+## Requirements
+Have a zip code lookup to search for weather.
+Have a menu item or link in your app that allows the user to see previous zip codes that were used. If I pick one of them, do a fresh query on the weather forecast.
